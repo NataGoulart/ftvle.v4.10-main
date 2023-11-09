@@ -31,7 +31,7 @@
         $email =  $linhas["codigo"];
   
         
-        echo( "Id: $id / Nome: $Usuario / Email: $Senha <br>");
+        echo( "Id: $id / Nome: $nome / Email: $email <br>");
     
     }
     ?>
@@ -49,8 +49,8 @@
     while($linha=$comando->fetch() )
     {
       $id=$linha["id"];
-      $nome=$linha["nome"];
-      $email=$linha["email"];
+      $nome=$linha["produto"];
+      $email=$linha["codigo"];
 
     
     }

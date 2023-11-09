@@ -13,7 +13,7 @@
         }
         
         if (isset($_POST["alterar"])) {
-            $comando = $pdo->prepare("UPDATE codigos SET produto='$produto',codigo='$codigo' WHERE id='$id'");
+            $comando = $pdo->prepare("UPDATE codigos SET produto='$nome',codigo='$email' WHERE id='$id'");
             $resultado = $comando->execute();
             header("Location: salvar_imagem.php");
         }
